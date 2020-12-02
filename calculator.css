@@ -1,0 +1,80 @@
+.main{
+  padding: 100px;
+  background-color: rgb(255, 248, 240);
+}
+.main>img{
+  width: 100px;
+}
+
+.gridTxt{
+  display: grid;  
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  background-image: url(./img/unnamed.jpg);
+  padding: 20px 20px 0px;
+  border-radius:10px 10px 0px 0px;
+
+}
+.gridTxt  input {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: default; 
+  border: rgba(233, 177, 198, 0.774) 5px solid;
+  
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto  auto;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    background-image: url(./img/unnamed.jpg);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+
+  .gridContainer  input {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 50px;
+    border: 0px ;
+  }
+
+  .gridContainer  input:active{
+    color: rgba(0, 4, 255, 0.616);
+    font-weight: 700;
+  }
+
+  
+  .gridContainer  input:hover{
+    background-color: rgba(255, 0, 0, 0.219);
+    cursor: pointer;
+  }
+
+  input:focus{
+    outline:none;
+  
+  }
+
+  .txt {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  #item0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #itemSum {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  
+  }
